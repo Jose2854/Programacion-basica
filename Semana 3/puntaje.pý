@@ -1,0 +1,13 @@
+#ALGORITMO
+#1 PEDIR PRIMER PUNTAJE
+#2 PEDIR SEGUNDO PUNTAJE
+#COMPARAR PUNTAJE 1 CON PUNTAJE 2
+#PSEUDOCODIGO
+# INICIO
+# LEER PUNTAJE 1
+# LEER PUNTAJE 2
+# ESCRIBIR SI PUNTAJE1 ES MAYOR QUE PUNTAJE2
+
+nacional=int(input("ingrese el primer puntaje: "))
+millos=int(input("ingresar el segundo puntaje: "))
+print(nacional > millos)

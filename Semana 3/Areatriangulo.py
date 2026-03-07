@@ -9,7 +9,6 @@
 # LEER LA ALTURA DEL TRIANGULO EN METROS
 # CALCULAR EL AREA CON LA FORMULA AREA=(BASE*ALTURA)
 # ESCRIBIR SI EL AREA ES MAYOR 
-# ESCRIBIR 
 
 base=float(input("ingrese la base del triangulo en metro: "))
 altura=float(input("ingrese la altura del triangulo en metros: "))

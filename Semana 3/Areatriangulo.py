@@ -1,0 +1,18 @@
+#PROGRAMA PARA CALCULAR EL AREA DEL TRIANGULO
+# 1 SOLICITAR AL USUARIO LA BASE DEL TRIANGULO EN METROS
+# 2 SOLICITAR AL USUARIO LA ALTURA DEL TRIANGULO EN METROS
+# CALCULAR EL AREA CON LA FORMULA AREA=(BASE*ALTURA)
+
+#PSEUDOCODIGO
+# INICIO
+# LEER LA BASE DEL TRIANGULO EN METROS
+# LEER LA ALTURA DEL TRIANGULO EN METROS
+# CALCULAR EL AREA CON LA FORMULA AREA=(BASE*ALTURA)
+# ESCRIBIR SI EL AREA ES MAYOR 
+# ESCRIBIR 
+
+base=float(input("ingrese la base del triangulo en metro: "))
+altura=float(input("ingrese la altura del triangulo en metros: "))
+area=(base*altura)/2
+print("el area del triangulo es", area)
+print("¿el area es mayor que 100?", area>100)

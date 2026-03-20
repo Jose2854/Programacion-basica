@@ -1,0 +1,7 @@
+compra = int(input("Valor de la compra: "))
+
+if compra > 100000:
+    total = int(compra * 0.85)
+    print("Descuento aplicado. Total a pagar:", total)
+else:
+    print("Sin descuento. Total a pagar:", compra)

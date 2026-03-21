@@ -1,0 +1,41 @@
+#Algoritmo
+Pedir la nota
+Si nota ≥ 4.5 → A
+Si nota ≥ 4.0 → B
+Si nota ≥ 3.5 → C
+Si nota ≥ 3.0 → D
+Si nota < 3.0 → E (reprobado)
+Si nota está entre 2.0 y 2.9 → puede habilitar
+Mostrar resultado
+#Pseudocódigo
+Leer nota
+
+Si nota >= 4.5 entonces
+    Mostrar "A - EXCELENTE"
+Sino si nota >= 4.0 entonces
+    Mostrar "B - SOBRESALIENTE"
+Sino si nota >= 3.5 entonces
+    Mostrar "C - BUENO"
+Sino si nota >= 3.0 entonces
+    Mostrar "D - ACEPTABLE"
+Sino
+    Si nota >= 2.0 y nota <= 2.9 entonces
+        Mostrar "E - REPROBADO | Puede habilitar"
+    Sino
+        Mostrar "E - REPROBADO | Sin habilitación"
+    FinSi
+nota = float(input("Ingresa la nota: "))
+
+if nota >= 4.5:
+    print("A - EXCELENTE | Aprobado")
+elif nota >= 4.0:
+    print("B - SOBRESALIENTE | Aprobado")
+elif nota >= 3.5:
+    print("C - BUENO | Aprobado")
+elif nota >= 3.0:
+    print("D - ACEPTABLE | Aprobado")
+else:
+    if 2.0 <= nota <= 2.9:
+        print("E - REPROBADO | Puede presentar habilitación")
+    else:
+        print("E - REPROBADO | Sin derecho a habilitación")

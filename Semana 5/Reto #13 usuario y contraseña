@@ -1,0 +1,34 @@
+#Algoritmo
+Definir usuario correcto = "admin"
+Definir contraseña correcta = "uniminuto2024"
+Pedir usuario
+Si usuario es correcto → pedir contraseña
+Si contraseña es correcta → acceso concedido
+Si no → contraseña incorrecta
+Si usuario no existe → usuario no encontrado
+#Pseudocódigo
+usuario_correcto = "admin"
+clave_correcta = "uniminuto2024"
+
+Leer usuario
+Si usuario == usuario_correcto entonces
+    Leer clave
+    Si clave == clave_correcta entonces
+        Mostrar "Acceso concedido"
+    Sino
+        Mostrar "Contraseña incorrecta"
+    FinSi
+Sino
+    Mostrar "Usuario no encontrado"
+
+usuario_correcto = "admin"
+clave_correcta = "uniminuto2024"
+usuario = input("Usuario: ")
+if usuario == usuario_correcto:
+    clave = input("Contraseña: ")
+    if clave == clave_correcta:
+        print("Acceso concedido. Bienvenido, admin!")
+    else:
+        print("Contraseña incorrecta")
+else:
+    print("Usuario no encontrado")

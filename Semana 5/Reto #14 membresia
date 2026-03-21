@@ -1,0 +1,41 @@
+#Algoritmo
+Leer tipo de membresía
+Leer valor de compra
+Leer si hay rebajas (True/False)
+Inicializar descuento = 0
+Si es silver y compra > 50000 → descuento 10%
+Si es gold → descuento 20%
+Si hay rebajas → sumar 5%
+Calcular total
+Mostrar resultado y envío gratis si aplica
+#Pseudocódigo
+Leer membresia
+Leer compra
+Leer rebajas
+descuento = 0
+Si membresia == "silver" y compra > 50000 entonces
+    descuento = 10
+FinSi
+Si membresia == "gold" entonces
+    descuento = 20
+FinSi
+Si rebajas == True entonces
+    descuento = descuento + 5
+FinSi
+total = compra * (1 - descuento/100)
+
+membresia = input("Tipo de membresía: ")
+compra = int(input("Valor de compra: "))
+rebajas = input("¿Hay rebajas? (True/False): ") == "True"
+descuento = 0
+if membresia == "silver" and compra > 50000:
+    descuento = 10
+elif membresia == "gold":
+    descuento = 20
+if rebajas:
+    descuento += 5
+total = int(compra * (1 - descuento / 100))
+if membresia == "gold" and compra > 100000:
+    print(f"Descuento: {descuento}% + envío gratis. Total: {total}")
+else:
+    print(f"Descuento: {descuento}%. Total: {total}")

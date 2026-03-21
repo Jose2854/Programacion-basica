@@ -1,0 +1,33 @@
+#Algoritmo
+Definir elección PC = "piedra"
+Leer elección usuario
+Validar entrada
+Si usuario = PC → empate
+Si usuario gana → mostrar victoria
+Si no → pierde
+#Pseudocódigo
+pc = "piedra"
+Leer usuario
+Si usuario no es válido entonces
+    Mostrar error
+Sino
+    Si usuario == pc entonces
+        Mostrar "EMPATE"
+    Sino si usuario == "papel" y pc == "piedra" entonces
+        Mostrar "GANASTE"
+    Sino
+        Mostrar "PERDISTE"
+    FinSi
+
+pc = "piedra"
+usuario = input("Elige piedra, papel o tijera: ")
+if usuario not in ["piedra", "papel", "tijera"]:
+    print("Opción inválida. Elige piedra, papel o tijera")
+else:
+    print("PC eligió:", pc)
+    if usuario == pc:
+        print("EMPATE")
+    elif usuario == "papel" and pc == "piedra":
+        print("GANASTE: papel le gana a piedra")
+    else:
+        print("PERDISTE: piedra le gana a tijera")

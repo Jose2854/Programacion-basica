@@ -1,0 +1,39 @@
+#Algoritmo
+Pedir lado A, B y C
+Verificar si forman triángulo:
+A+B > C
+A+C > B
+B+C > A
+Si no cumple → no es triángulo
+Si cumple:
+Si todos iguales → equilátero
+Si dos iguales → isósceles
+Si todos diferentes → escaleno
+Mostrar resultado
+#Pseudocódigo
+Leer A, B, C
+
+Si (A+B > C) y (A+C > B) y (B+C > A) entonces
+    Si A == B y B == C entonces
+        Mostrar "Equilátero"
+    Sino si A == B o A == C o B == C entonces
+        Mostrar "Isósceles"
+    Sino
+        Mostrar "Escaleno"
+    FinSi
+Sino
+    Mostrar "No forman triángulo"
+
+a = float(input("Lado A: "))
+b = float(input("Lado B: "))
+c = float(input("Lado C: "))
+
+if (a + b > c) and (a + c > b) and (b + c > a):
+    if a == b == c:
+        print("Triángulo EQUILÁTERO")
+    elif a == b or a == c or b == c:
+        print("Triángulo ISÓSCELES")
+    else:
+        print("Triángulo ESCALENO")
+else:
+    print("NO forman un triángulo")

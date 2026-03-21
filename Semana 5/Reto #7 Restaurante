@@ -1,0 +1,35 @@
+#ALGORITMO
+Mostrar opciones del menú
+Pedir al usuario una opción
+Si opción = 1 → Bandeja Paisa
+Si opción = 2 → Ajiaco
+Si opción = 3 → Sancocho
+Si no → opción inválida
+Mostrar resultado
+
+#Pseudocódigo
+Mostrar "1. Bandeja Paisa"
+Mostrar "2. Ajiaco"
+Mostrar "3. Sancocho"
+
+Leer opcion
+
+Si opcion == 1 entonces
+    Mostrar "Bandeja Paisa - $18000"
+Sino si opcion == 2 entonces
+    Mostrar "Ajiaco - $15000"
+Sino si opcion == 3 entonces
+    Mostrar "Sancocho - $12000"
+Sino
+    Mostrar "Opción no válida"
+
+opcion = int(input("Elige una opción (1-3): "))
+
+if opcion == 1:
+    print("Elegiste: Bandeja Paisa - $18000")
+elif opcion == 2:
+    print("Elegiste: Ajiaco - $15000")
+elif opcion == 3:
+    print("Elegiste: Sancocho - $12000")
+else:
+    print("Opción no válida, intenta de nuevo")

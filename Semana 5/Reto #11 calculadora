@@ -1,0 +1,24 @@
+#Algoritmo
+Definir tarifa base = 5000
+Pedir la hora del viaje
+Pedir la distancia en km
+Inicializar total = tarifa base
+Si es horario nocturno (hora ≥ 21 o ≤ 5) → aumentar 30%
+Si km > 10 → calcular km extra y sumarlos (km extra * 800)
+Mostrar total
+
+#Pseudocódigo
+Definir tarifa_base
+Leer hora
+Leer km
+
+total = tarifa_base
+
+if hora >= 21 or hora <= 5:
+    total *= 1.30
+
+if km > 10:
+    extra = km - 10
+    total += extra * 800
+
+print("Total a pagar:", int(total))

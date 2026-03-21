@@ -1,0 +1,20 @@
+#Algoritmo
+Pedir la temperatura al usuario
+Convertirla a número entero
+Si temperatura < 5 → Muy frío
+Si está entre 5 y 14 → Frío
+Si está entre 15 y 24 → Templado
+Si está entre 25 y 34 → Caliente
+Si es ≥ 35 → Muy caliente
+temp = int(input("Ingresa la temperatura: "))
+
+if temp < 5:
+    print("MUY FRÍO")
+elif 5 <= temp <= 14:
+    print("FRÍO")
+elif 15 <= temp <= 24:
+    print("TEMPLADO")
+elif 25 <= temp <= 34:
+    print("CALIENTE")
+else:
+    print("MUY CALIENTE")
